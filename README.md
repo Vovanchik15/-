@@ -69,5 +69,20 @@ f()-Плохой способ
 f()
 
 
+"Работа с файлами"
+
+1)with open('new_file', 'w+') as f:
+
+     f.write(write_data)
+     
+
+2)f=open('no_with', 'w')
+
+some_text=f.read()
+
+f.close()
+
+print(f.closed)
+
 
 
