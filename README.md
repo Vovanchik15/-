@@ -55,13 +55,17 @@ def ИМЯ_ФУНКЦИИ(АРГУМЕНТ):
 ```
 
 "Модули"
-1)import module
+
+1)import module      
+
 module.f()
 
 2)from module import *
+
 f()-Плохой способ
 
 3)from moodule import function as f
+
 f()
 
 
