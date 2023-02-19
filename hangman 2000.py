@@ -1,3 +1,5 @@
+from random import choice
+
 def welcome_speech(t):
     print(f'''
     Добро пожаловать в игру - hangman 2000
@@ -7,7 +9,11 @@ def welcome_speech(t):
     ''')
 
 
-def check_mistake():
+def check_mistake(w,g):
+    for i in w:
+        if i==g:
+            return True
+    return False
 
 
 def start_template(w):
@@ -46,7 +52,7 @@ def check_win(g):
 
 def game():
     progress = True
-    word = ['orange']
+    word = ['orange, mouse']
     lifes = 3
 
     word_in_play = get_word(word)
